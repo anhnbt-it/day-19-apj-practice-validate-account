@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
@@ -43,5 +44,13 @@ class AccountValidateExampleTest {
         String regex = "123456";
         boolean actual = accountValidate.validate(regex);
         assertTrue(actual);
+    }
+
+    @Test
+    @DisplayName(".@")
+    void test5() {
+        String regex = ".@";
+        boolean actual = accountValidate.validate(regex);
+        assertFalse(actual);
     }
 }
