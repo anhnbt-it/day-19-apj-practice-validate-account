@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 class AccountValidateExampleTest {
 
-    private AccountValidateExample accountValidate = new AccountValidateExample();
+    private final AccountValidateExample accountValidate = new AccountValidateExample();
 
     @Test
     @DisplayName("123abc")
