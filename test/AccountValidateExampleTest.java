@@ -53,4 +53,28 @@ class AccountValidateExampleTest {
         boolean actual = accountValidate.validate(regex);
         assertFalse(actual);
     }
+
+    @Test
+    @DisplayName("12345")
+    void test6() {
+        String regex = "12345";
+        boolean actual = accountValidate.validate(regex);
+        assertFalse(actual);
+    }
+
+    @Test
+    @DisplayName("1234_")
+    void test7() {
+        String regex = "1234_";
+        boolean actual = accountValidate.validate(regex);
+        assertFalse(actual);
+    }
+
+    @Test
+    @DisplayName("abcde")
+    void test8() {
+        String regex = "abcde";
+        boolean actual = accountValidate.validate(regex);
+        assertFalse(actual);
+    }
 }
