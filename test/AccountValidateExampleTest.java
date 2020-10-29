@@ -18,7 +18,7 @@ class AccountValidateExampleTest {
     void test1() {
         String regex = "123abc";
         boolean actual = accountValidate.validate(regex);
-        assertEquals(true, actual);
+        assertTrue(actual);
     }
 
     @Test
@@ -26,6 +26,6 @@ class AccountValidateExampleTest {
     void test2() {
         String regex = "_abc123";
         boolean actual = accountValidate.validate(regex);
-        assertEquals(true, actual);
+        assertTrue(actual);
     }
 }
