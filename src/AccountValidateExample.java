@@ -14,6 +14,11 @@ public class AccountValidateExample {
      * Phải dài hơn 6 ký tự
      * Không chứa các ký tự viết hoa
      * Cho phép dấu gạch dưới
+     * ^: Bắt đầu chuỗi regex
+     * [_a-z0-9]: Ký tự cho phép dấu gạch dưới
+     * chỉ là các chữ thường từ a-z hoặc 0-9
+     * {6,}: Ít nhất 6 ký tự
+     * $: Kết thúc chuỗi regex
      */
 
     private static final String ACCOUNT_REGEX = "^[_a-z0-9]{6,}$";
