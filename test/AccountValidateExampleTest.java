@@ -28,4 +28,20 @@ class AccountValidateExampleTest {
         boolean actual = accountValidate.validate(regex);
         assertTrue(actual);
     }
+
+    @Test
+    @DisplayName("______")
+    void test3() {
+        String regex = "______";
+        boolean actual = accountValidate.validate(regex);
+        assertTrue(actual);
+    }
+
+    @Test
+    @DisplayName("123456")
+    void test4() {
+        String regex = "123456";
+        boolean actual = accountValidate.validate(regex);
+        assertTrue(actual);
+    }
 }
